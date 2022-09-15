@@ -50,7 +50,7 @@ main{
     background: url(../../images/back-contato.svg) center no-repeat;
     background-size: cover;
     background-attachment:fixed;
-    height: 150vh;
+    height: auto;
     width: 100%;
     padding-top: 10%;
     font-family: 'cabinregular';
@@ -129,6 +129,7 @@ h3{
     line-height: 25px;
     margin-left: 15px;
     font-size: 20px;
+    text-decoration: none;
 }
 
 h4{
@@ -214,8 +215,9 @@ textarea{
 
     main{
         display: block;
-        height: 220vh;
+        height: auto;
         align-items: center;
+        width: auto;
     }
     .menu{
         display: block;
@@ -287,7 +289,9 @@ textarea{
         color: #c23538;
     }
 
-    
+    .fale-conosco{
+        align-items: center;
+    }
 
     .h1-1 {
         font-size: 90px;
@@ -317,6 +321,7 @@ textarea{
         font-weight: normal;
         letter-spacing: 0px;
         font-size: 18px;
+        line-height: auto;
     }
 
     .btn-whats{
@@ -331,7 +336,6 @@ textarea{
 
     a{
         align-items: center;
-        display: flex;
     }
 
     div, .formulario{
@@ -343,8 +347,9 @@ textarea{
         background:none;
         align-items: center;
         box-sizing: border-box;
-        margin: 40px;
+        margin: 0px 40px 0 40px;
         width: auto;
+        padding-bottom: 40px;
 
     }
 

@@ -45,13 +45,13 @@ header{
 }
 
 main{
-    margin-top: 10px;;
+    margin: 10px 0 10px 0;
     background: url("../components/images/raio3.svg") no-repeat center bottom;
     background-size: cover;
-    background-attachment: fixed;
-    height: 120vh;
-    width: 100vw;
-    padding-top: 10%;
+    background-attachment:fixed 100%;
+    height: auto;
+    width: 100%;
+    padding: 10% 0 10% 0;
 }
 
 aside{
@@ -103,7 +103,7 @@ button{
 .btn-solicitar{
     width: 40vw;
     height: 10vh;
-    margin-top: 50px;
+    margin: 50px 0px 50px 0px;
     font-family: 'lemonlight';
     font-weight: bold;
     letter-spacing: 2pt;
@@ -183,6 +183,11 @@ button{
     body{
         overflow-x:hidden;
     }
+
+    main{
+        background-size: cover;
+        background-position: 100%;
+    }
    
     .menu{
         display: block;
@@ -259,6 +264,13 @@ button{
         
     }
 
+    .laudodespda{
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: row;
+        letter-spacing: normal;
+    }
     .spda{
         font-size: 120px;
     }
@@ -266,12 +278,7 @@ button{
         font-size: 36px;
     }
     .pararaios{
-        font-size: 20px;
-    }
-    .laudodespda{
-        align-items: center;
-        padding-left: 50px;
-        padding-right: 50px;
+        font-size: auto;
     }
     .navbar-ul{
         display: block;

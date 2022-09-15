@@ -109,6 +109,7 @@ main{
     body{
         overflow-x:hidden;
     }
+    
     main{
         display: block;
         height: auto;
