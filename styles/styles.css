@@ -63,6 +63,7 @@ aside{
     font-family: 'lemonregular';
     color: white;
     display: row;
+    align-items: flex-start;
     
 }
 
@@ -77,7 +78,7 @@ aside{
 
 .spda{
     font-size: 150px;
-    letter-spacing: 20px;
+    letter-spacing: 15px;
     margin-left: 12px;
 }
 
@@ -266,19 +267,34 @@ button{
 
     .laudodespda{
         align-items: center;
-        padding-left: 50px;
-        padding-right: 50px;
-        display: row;
-        letter-spacing: normal;
-    }
-    .spda{
-        font-size: 120px;
+        padding: 100px 0 0 0;
     }
     .laudo{
         font-size: 36px;
+        text-align: center;
+        margin: 0;
+    }
+    .spda{
+        font-size: 120px;
+        text-align: center;
+        letter-spacing: 10px;
     }
     .pararaios{
         font-size: auto;
+        text-align: center;
+    }
+    .btn-solicitar{
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        position:relative;
+        width: 85vw;
+        margin: 37px;
+        display: flex;
+    }
+    .btn2{
+        margin: 37px 0 37px 0;
+        padding-left: 0;
     }
     .navbar-ul{
         display: block;
