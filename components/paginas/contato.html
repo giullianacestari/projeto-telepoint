@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telepoint | Contato</title>
+    <link rel="stylesheet" href="/components/paginas/estilos/contato.css">
+    <link rel="stylesheet" href="/components/fonts/fonts.css">
+    <script defer src="../paginas/interativo/contato.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <a id="logo4" href="../../index.html"><img src="../images/logo4.svg" width: 900px;></a>
+        <nav class="nav">
+            <button class="btn-menu"
+            aria-label="Abrir Menu"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false">
+
+            Menu<span class="hamburger"></span></button>
+            <ul class="menu" id="menu" role="menu">
+                <li><a href="../paginas/atelepoint.html">A Telepoint</a></li>
+                <li><a href="../paginas/servicos.html">Serviços</a></li>
+                <li><a href="../paginas/clientes.html">Clientes</a></li>
+                <li><a href="../paginas/contato.html">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+   <main>
+    <div class="fale-conosco">
+        <h1 class="h1-1">FALE</h1>
+        <h1 class="h1-2">CONOSCO</h1>
+        <h2>Entre em contato conosco via Whatsapp ou preencha o formulário ao lado.</h2>
+
+        <a ref="#"><button class="btn-whats">Contato via Whatsapp</button></a>
+
+
+        <h3>Unidade São Bernardo do Campo - SP<br>
+            (11) 4177-1520<br>
+            (11) 4365-1050<br>
+            guilherme@telepoint.com.br              
+        </h3>
+
+        <h4>Av. Senador Vergueiro, 3861 - Rudge Ramos<br>
+            CNPJ: 12.387.701/0001-04</h4>
+
+    </div>
+
+
+    <div class="formulario">
+        <form action="https://formsubmit.co/guilherme@telepoint.com.br"  method="POST">
+
+
+            <input type="name" name="Nome" placeholder="Nome Completo"required>
+            <input type="text" name="Empresa" placeholder="Empresa">
+            <input type="text" name="CEP" placeholder="CEP" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="text" name="Telefone" placeholder="Telefone" required>
+            <input type="text" name="Assunto" placeholder="Assunto" required>
+            <textarea cols="30" rows="10" name="Mensagem" placeholder="Digite sua mensagem" required></textarea>
+            <input class="enviar" type="submit" value="Enviar">
+            <input class="limpar" type="reset" value="Limpar">
+
+
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+   </main>
+
+</body>
+</html>

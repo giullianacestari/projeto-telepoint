@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#logo4{
+    padding-top: 1rem;
+}
+
+body{
+    font-family: 'lemonbold';
+    background: white;
+}
+
+a{
+    color: #3c67af;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    height: 8rem;
+    padding: 1rem;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 22px;
+}
+
+.menu a:hover{
+    color: #c23538;
+}
+
+main{
+    margin-top: 10px;
+    background: url(../../images/back-contato.svg) center no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 150vh;
+    width: 100vw;
+    padding-top: 10%;
+    font-family: 'cabinregular';
+    display: flex;
+}
+
+
+aside{
+    padding-top: 100px;
+    padding-left: 70px;
+}
+
+/* MENU HAMBURGUER*/
+.btn-menu {
+    display: none;
+}
+
+/* ----------------------------------*/
+
+.fale-conosco{
+    font-family: 'lemonregular';
+    color: white;
+    display: row;
+    align-items: flex-start;
+}
+
+
+.h1-1{
+    font-size: 120px;
+    line-height: 10px;
+    letter-spacing: 10px;
+    color: white;
+    margin-left: 15px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.h1-2{
+    font-size: 80px;
+    padding: 30px;
+    letter-spacing: 5px;
+    margin-left: 15px;
+    padding: 30px;
+}
+
+h2{
+    padding: 30px;
+    font-family: 'cabinregular';
+    letter-spacing: 2px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+
+.btn-whats{
+    padding: 30px;
+    font-family: 'lemonregular';
+    letter-spacing: 2px;
+    background: #2bb826;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    margin-left: 45px;
+}
+
+.btn-whats:hover{
+    background: white;
+    color: #2bb826;
+}
+
+h3{
+    padding: 30px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+h4{
+    padding: 30px;
+    font-family: 'cabinregular';
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-left: 15px;
+    font-size: 17px;
+}
+
+.formulario{
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    background: #f7f7f7;
+    height: 95vh;
+    width: 50vw;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+form{
+    background: #c23538;
+    border-radius: 5px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    height: 90vh;
+    width: 85vh;
+    
+}
+
+input, textarea {
+    background: #f7f7f7;
+    border:1px solid #777;
+    border-radius: 5px;
+    color: #777;
+    font-size: 18px;
+    outline: none;
+    padding: 1pt;;
+    height: 100vh;
+    font-family: 'cabinregular';
+
+}
+
+textarea{
+    padding: 20pt;
+}
+
+.enviar{
+    background: #68c265;
+    color: white;
+    font-family: 'lemonregular';
+}
+
+.enviar:hover{
+    background: #bdecbc;
+    color: #23961f;
+}
+
+.limpar{
+    background: #6a1719;
+    color: white;
+    font-family: 'lemonregular';
+}
+
+.limpar:hover{
+    background: #abaaaa;
+    color: white;
+}
+
+
+
+@media (max-width: 700px){
+    body{
+        overflow-x:hidden;
+    }
+
+    main{
+        display: block;
+        height: 220vh;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 8.7rem;
+        left: 0;
+        background: white;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - 4.6875rem);
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.3s;
+    }
+
+    .menu a{
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.3rem solid rgba(0,0,0,0.16);
+        border-radius: 0;
+    }
+
+    .btn-menu{
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #3c67af;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::before,
+    .hamburger::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav.active .menu{
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    .nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    .nav.active, .hamburger:hover {
+        color: #c23538;
+    }
+    
+    .paragraph{
+        margin-left: 20px;
+        display: flex;
+        margin-right: 40px;
+        letter-spacing: 0px;
+    }
+    .pi{
+        letter-spacing: -0.5px;
+    }
+
+    .h1-1 {
+        font-size: 90px;
+        letter-spacing: 5px;
+        color: white;
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+        
+    }
+    
+    .h1-2{
+        font-size: 60px;
+        letter-spacing: 5px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    h3{
+
+        font-weight: normal;
+        letter-spacing: 0px;
+        font-size: 18px;
+    }
+
+    .btn-whats{
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        width: 85vw;
+    }
+
+    .formulario{
+        background:none;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    form{
+        background: #f7f7f7c8;
+        margin: 35px;
+        margin-top: 10px;
+    }
+    
+}

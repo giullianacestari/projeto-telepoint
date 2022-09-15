@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#logo4{
+    padding-top: 1rem;
+}
+
+body{
+    font-family: 'lemonbold';
+    background: white;
+}
+
+a{
+    color: #3c67af;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    height: 8rem;
+    padding: 1rem;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 22px;
+}
+
+.menu a:hover{
+    color: #c23538;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    margin-top: 10px;
+    background: url(../../images/back-home-light.svg) no-repeat center bottom;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center top;
+    height: 140vh;
+    width: 100vw;
+    padding-top: 10%;
+    font-family: 'cabinregular';
+}
+
+/* MENU HAMBURGUER*/
+
+.btn-menu {
+    display: none;
+}
+/* ----------------------------------*/
+
+#title-quem{
+    text-align: center;
+    color: #3c67af;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#quem-description{
+    text-align: justify;
+    margin:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #3c67af;
+    padding-top: 10px;
+}
+
+
+#btn-contato{
+    background: #c23538;
+    color: white;
+    font-family: 'lemonlight';
+    border-radius: 5px;
+    border: none;
+    width: 80vw;
+    height: 10vh;
+    margin: 50px;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    font-size: 15pt;
+    display:inline;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#btn-contato:hover{
+    background: #cecece;
+    color: #c23538;
+}
+
+@media (max-width: 700px){
+    body{
+        overflow-x:hidden;
+    }
+    main{
+        display: block;
+        height: 140vh;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 8.7rem;
+        left: 0;
+        background: white;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - 4.6875rem);
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.3s;
+    }
+
+    .menu a{
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.3rem solid rgba(0,0,0,0.16);
+        border-radius: 0;
+    }
+
+    .btn-menu{
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #3c67af;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::before,
+    .hamburger::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav.active .menu{
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    .nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    .nav.active, .hamburger:hover {
+        color: #c23538;
+    }
+    #title-quem{
+        padding-top: 30px;
+    }
+    #quem-description{
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    #btn-contato{
+        margin: 50px;
+    }
+}

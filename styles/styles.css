@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#logo4{
+    padding-top: 1rem;
+}
+
+body{
+    font-family: 'lemonbold';
+    background: white;
+}
+
+a{
+    color: #3c67af;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    height: 8rem;
+    padding: 1rem;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 22px;
+}
+
+.menu a:hover{
+    color: #c23538;
+}
+
+main{
+    margin-top: 10px;;
+    background: url("../components/images/raio3.svg") no-repeat center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 120vh;
+    width: 100vw;
+    padding-top: 10%;
+}
+
+aside{
+    padding-top: 100px;
+    padding-left: 70px;
+}
+
+.laudodespda{
+    font-family: 'lemonregular';
+    color: white;
+    display: row;
+    
+}
+
+.laudo{
+   font-size: 56px;
+   line-height: 10px;
+   letter-spacing: 5px;
+   color: rgba(245,245,245,0.783);
+   margin-left: 15px;
+   padding-top: 17px;
+}
+
+.spda{
+    font-size: 150px;
+    letter-spacing: 20px;
+    margin-left: 12px;
+}
+
+.pararaios{
+    letter-spacing: 5px;
+    margin-left: 12px;
+    line-height: 27px;  
+}
+
+/* MENU HAMBURGUER*/
+.btn-menu {
+    display: none;
+}
+
+/* ----------------------------------*/
+
+
+button{
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-solicitar{
+    width: 40vw;
+    height: 10vh;
+    margin-top: 50px;
+    font-family: 'lemonlight';
+    font-weight: bold;
+    letter-spacing: 2pt;
+    color: white;
+    background: #c23538;
+    font-size: 15pt;
+    }
+
+
+.btn-solicitar:hover{
+    color:#c23538;
+    background: white;
+}
+
+.btn2:hover{
+    background: #e7e7e7;
+}
+
+
+#spda-description{
+    font-family: 'cabinbold';
+    color: #3c67af;
+    padding-top: 20px;
+    margin: 40px;
+    font-size: 20px;
+
+}
+
+#phome{
+    font-family: 'cabinregular';
+    padding: 10px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#texto-alternativo1{
+    color: #c23538;
+    font-family: 'lemonregular';
+    margin: 40px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+
+.saiba-mais{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    justify-content: space-between;
+    
+}
+
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    width: 20vw;
+    height: 20vh;
+    color: white;
+    font-family: 'lemonregular';
+    background:100vh 100vw;
+    border-radius: 15px;
+    text-align: center column;
+    font-size: 10px;
+}
+
+.btn:hover{
+    opacity: 50%;
+}
+
+/*-------------------------------------------*/
+
+@media (max-width: 700px){
+    body{
+        overflow-x:hidden;
+    }
+   
+    .menu{
+        display: block;
+        position: absolute;
+        top: 8.7rem;
+        left: 0;
+        background: white;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - 4.6875rem);
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.3s;
+    }
+
+    .menu a{
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.3rem solid rgba(0,0,0,0.16);
+        border-radius: 0;
+    }
+
+    .btn-menu{
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #3c67af;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::before,
+    .hamburger::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav.active .menu{
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    .nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    .nav.active, .hamburger:hover {
+        color: #c23538;
+    }
+
+    .btn-solicitar{
+        width:75vw;
+        
+    }
+
+    .spda{
+        font-size: 120px;
+    }
+    .laudo{
+        font-size: 36px;
+    }
+    .pararaios{
+        font-size: 20px;
+    }
+    .laudodespda{
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .navbar-ul{
+        display: block;
+    }
+    }
+    
+

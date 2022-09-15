@@ -1,0 +1,48 @@
+@font-face{
+    font-family: "lemonbold";
+    src: url('../fonts/LEMONMILK-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "lemonregular";
+    src: url('../fonts/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "lemonlight";
+    src: url('../fonts/LEMONMILK-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "cabinbold";
+    src: url('../fonts/Cabin-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "cabinmedium";
+    src: url('../fonts/Cabin-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "cabinregular";
+    src: url('../fonts/Cabin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "cabinsemibold";
+    src: url('../fonts/Cabin-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*COPIAR DAQUI*/
+#logo4{
+    padding-top: 1rem;
+}
+
+body{
+    font-family: 'lemonbold';
+    background: white;
+}
+
+a{
+    color: #3c67af;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    height: 8rem;
+    padding: 1rem;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 22px;
+}
+
+.menu a:hover{
+    color: #c23538;
+}
+/*ATÉ AQUI*/
+main{
+    margin-top: 10px;
+    background: url(../../images/back-servicos6.svg) no-repeat center top;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 170vh;
+    width: 100vw;
+    font-family: 'cabinregular';
+}
+
+/* MENU HAMBURGUER*/
+
+.btn-menu {
+    display: none;
+}
+
+
+/* ----------------------------------*/
+/* CONFIGURAÇÕES DE TEXTO DO MAIN*/
+h1 {
+    color: #3c67af;
+    text-align: center;
+    align-items: center;
+    padding-top: 40px;
+    font-family: 'lemonregular';
+}
+
+div, .text{
+    display: block;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'cabinregular';
+    color:#3c67af;
+    align-items: center;
+}
+
+
+.subtitle{
+    padding-top: 50px;
+    color: #c23538;
+    font-family: 'lemonregular';
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.s21{
+    padding-bottom: 0;
+}
+.s2{
+    padding-top: 5px;
+    font-family: 'lemonlight';
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.paragraph{
+    margin-left: 120px;
+    line-height: 35px;
+}
+
+/* ----------------------------------*/
+
+@media (max-width: 700px){
+    body{
+        overflow-x:hidden;
+    }
+    main{
+        display: block;
+        height: 220vh;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 8.7rem;
+        left: 0;
+        background: white;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - 4.6875rem);
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.3s;
+    }
+
+    .menu a{
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.3rem solid rgba(0,0,0,0.16);
+        border-radius: 0;
+    }
+
+    .btn-menu{
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #3c67af;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::before,
+    .hamburger::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav.active .menu{
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    .nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    .nav.active, .hamburger:hover {
+        color: #c23538;
+    }
+    /*COPIAR ATÉ AQUI*/
+    
+    .paragraph{
+        margin-left: 20px;
+        display: flex;
+        margin-right: 40px;
+        letter-spacing: 0px;
+    }
+    .pi{
+        letter-spacing: -0.5px;
+    }
+}
+    
