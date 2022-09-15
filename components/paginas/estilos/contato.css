@@ -218,6 +218,8 @@ textarea{
         height: auto;
         align-items: center;
         width: auto;
+        background-size: cover;
+        background-position: 100%;
     }
     .menu{
         display: block;

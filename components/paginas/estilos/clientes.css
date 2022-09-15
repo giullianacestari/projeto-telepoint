@@ -85,6 +85,8 @@ div{
     main{
         display: block;
         height: auto;
+        background-size: cover;
+        background-position: 100%;
     }
     .menu{
         display: block;
