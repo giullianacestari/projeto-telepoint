@@ -51,7 +51,7 @@ main{
     background-size: cover;
     background-attachment:fixed;
     height: 170vh;
-    width: 100vw;
+    width: 100%;
     font-family: 'cabinregular';
 }
 
@@ -112,7 +112,7 @@ div, .text{
     }
     main{
         display: block;
-        height: 220vh;
+        height: auto;
     }
 
     .menu{
@@ -187,10 +187,10 @@ div, .text{
     /*COPIAR ATÉ AQUI*/
     
     .paragraph{
-        margin-left: 20px;
         display: flex;
-        margin-right: 40px;
         letter-spacing: 0px;
+        margin: 0 20px 0px 20px;
+        padding-bottom: 40px;
     }
     .pi{
         letter-spacing: -0.5px;

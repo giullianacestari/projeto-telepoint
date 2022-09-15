@@ -16,6 +16,7 @@ body{
 a{
     color: #3c67af;
     text-decoration: none;
+    align-items: center;
 }
 
 header{
@@ -53,7 +54,7 @@ main{
     background-attachment:fixed;
     background-position: center top;
     height: 140vh;
-    width: 100vw;
+    width: 100%;
     padding-top: 10%;
     font-family: 'cabinregular';
 }
@@ -84,22 +85,19 @@ main{
     padding-top: 10px;
 }
 
-
 #btn-contato{
     background: #c23538;
     color: white;
     font-family: 'lemonlight';
     border-radius: 5px;
     border: none;
-    width: 80vw;
+    width: 80vh;
     height: 10vh;
     margin: 50px;
     font-weight: bold;
     letter-spacing: 2pt;
     font-size: 15pt;
-    display:inline;
-    margin-left: 100px;
-    margin-right: 100px;
+    align-items: center;
 }
 
 #btn-contato:hover{
@@ -113,7 +111,7 @@ main{
     }
     main{
         display: block;
-        height: 140vh;
+        height: auto;
     }
 
     .menu{
@@ -194,6 +192,9 @@ main{
     }
 
     #btn-contato{
-        margin: 50px;
+        margin: 1rem 2.5rem 1.5rem 2.5rem;
+        align-items: center;
+        width: auto;
+        padding: 0 1.5rem 0 1.5rem;
     }
 }
